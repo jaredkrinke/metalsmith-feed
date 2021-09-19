@@ -27,8 +27,7 @@ module.exports = function(options) {
     const feedOptions = {
       ...metadata.site,
       ...options,
-      site_url: metadata.site != null ? metadata.site.url : undefined,
-      generator: 'metalsmith-feed'
+      site_url: metadata.site != null ? metadata.site.url : undefined
     };
 
     const siteUrl = feedOptions.site_url;
